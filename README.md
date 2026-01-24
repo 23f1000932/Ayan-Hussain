@@ -3,7 +3,7 @@
 
 Welcome to my personal portfolio repository! This website serves as a digital hub for my projects, certifications, and technical journey in the world of Data Science and Machine Learning.
 
-**🔗** [**View the Live Portfolio Here**](https://www.google.com/search?q=https://23f1000932.github.io/portfolio/ "null") *(Replace with your actual GitHub Pages link)*
+**🔗** [**View the Live Portfolio Here**](https://www.google.com/search?q=https://23f1000932.github.io/portfolio/) *(Replace with your actual GitHub Pages link)*
 
 👨‍💻 About Me
 --------------
