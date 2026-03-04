@@ -14,6 +14,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Spline 3D Web Component -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+
     <style>
         /* --- CSS VARIABLES & RESET --- */
         :root {
@@ -257,10 +260,109 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
             padding-top: 70px;
             position: relative;
             z-index: 1;
+            overflow: hidden;
+        }
+
+        /* Split layout wrapper */
+        .hero-split {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            min-height: calc(100vh - 70px);
+            gap: 0;
+        }
+
+        /* Left: text content */
+        .hero-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 40px 60px;
+            text-align: left;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-left .social-links {
+            justify-content: flex-start;
+        }
+
+        .hero-left .btn-group {
+            justify-content: flex-start;
+        }
+
+        /* Right: 3D scene */
+        .hero-right {
+            flex: 1;
+            position: relative;
+            height: calc(100vh - 70px);
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        spline-viewer {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Spotlight glow overlay (CSS-only, mirrors the React Spotlight component) */
+        .hero-spotlight {
+            position: absolute;
+            top: -150px;
+            left: -100px;
+            width: 800px;
+            height: 600px;
+            background: radial-gradient(ellipse at center,
+                rgba(0, 255, 65, 0.08) 0%,
+                rgba(0, 255, 65, 0.04) 30%,
+                transparent 70%);
+            pointer-events: none;
+            z-index: 1;
+            animation: spotlightPulse 4s ease-in-out infinite alternate;
+        }
+
+        body.light-mode .hero-spotlight {
+            background: radial-gradient(ellipse at center,
+                rgba(0, 143, 17, 0.06) 0%,
+                rgba(0, 143, 17, 0.03) 30%,
+                transparent 70%);
+        }
+
+        @keyframes spotlightPulse {
+            from { opacity: 0.6; transform: scale(1); }
+            to   { opacity: 1;   transform: scale(1.08); }
+        }
+
+        /* Spinner loader shown while Spline loads */
+        .spline-loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .spline-loader .loader {
+            width: 48px;
+            height: 48px;
+            border: 4px solid rgba(0, 255, 65, 0.15);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.9s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
 
         .hero-content h1 {
@@ -822,6 +924,29 @@
             .hero-content h1 {
                 font-size: 2.5rem;
             }
+
+            /* Hero split → stacked on mobile */
+            .hero-split {
+                flex-direction: column;
+            }
+
+            .hero-left {
+                padding: 40px 24px 20px;
+                align-items: center;
+                text-align: center;
+            }
+
+            .hero-left .social-links,
+            .hero-left .btn-group {
+                justify-content: center;
+            }
+
+            .hero-right {
+                width: 100%;
+                flex: none;
+                height: 340px;
+                min-height: 0;
+            }
             
             .nav-actions {
                 display: none;
@@ -909,20 +1034,43 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-content">
-            <p style="color: var(--accent); font-family: var(--font-mono); margin-bottom: 1rem;">Hi, my name is</p>
-            <h1>Ayan Hussain.</h1>
-            <h2>I am a <span id="typewriter"></span><span style="color:var(--accent)">|</span></h2>
-            
-            <div class="social-links">
-                <a href="https://github.com/23f1000932" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ayan-hussain-58752626b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:23f1000932@ds.study.iitm.ac.in" title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
+        <!-- Subtle spotlight glow (CSS-only replacement for the React Spotlight component) -->
+        <div class="hero-spotlight"></div>
+        
+        <div class="hero-split">
+            <!-- Left: text content -->
+            <div class="hero-left">
+                <p style="color: var(--accent); font-family: var(--font-mono); margin-bottom: 1rem;">Hi, my name is</p>
+                <h1 style="font-size:3.5rem; font-weight:700; line-height:1.1; letter-spacing:-1px; margin-bottom:10px;">
+                    Ayan <span style="color:var(--accent); text-shadow: 0 0 15px var(--accent-glow);">Hussain.</span>
+                </h1>
+                <h2
+                    style="font-size:1.4rem; color:var(--text-secondary); font-family:var(--font-mono); min-height:1.6em; margin-bottom:2rem;">
+                    I am a <span id="typewriter"></span><span style="color:var(--accent)">|</span>
+                </h2>
+                
+                <div class="social-links">
+                    <a href="https://github.com/23f1000932" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ayan-hussain-58752626b" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:23f1000932@ds.study.iitm.ac.in" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
 
-            <div class="btn-group">
-                <a href="#projects" class="btn">Check out my work!</a>
-                <a href="https://drive.google.com/file/d/1E-tKhY34_XV98f_N2N_kWw7bKdXw4A_K/view?usp=sharing" download="Ayan_Hussain_Resume" class="btn btn-outline">Download CV</a>
+                <div class="btn-group">
+                    <a href="#projects" class="btn">Check out my work!</a>
+                    <a href="https://drive.google.com/file/d/1E-tKhY34_XV98f_N2N_kWw7bKdXw4A_K/view?usp=sharing"
+                        download="Ayan_Hussain_Resume" class="btn btn-outline">Download CV</a>
+                </div>
+                </div>
+                
+                <!-- Right: Interactive Spline 3D scene -->
+                <div class="hero-right">
+                    <!-- Spinner shown while scene loads -->
+                    <div class="spline-loader">
+                        <div class="loader"></div>
+                    </div>
+                    <spline-viewer url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode" style="background: transparent;"
+                        loading-anim-type="none"></spline-viewer>
             </div>
         </div>
     </section>
