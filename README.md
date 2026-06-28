@@ -82,4 +82,7 @@ Unlike modern trends that rely heavily on bulky frameworks like React or styling
 
 -   **Email:** <ayanhussain4212@gmail.com>
 
-*© 2025 Ayan Hussain. Built with code, coffee, and data.*
+-   **Email:** <23f1000932@ds.study.iitm.ac.in
+
+
+*© 2025 Ayan Hussain. Built with code, coffee, and data.*git 
