@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayan Hussain | Data Analyst & Data Scientist</title>
-    <meta name="description" content="Portfolio of Ayan Hussain, a Data Science student at IIT Madras specializing in Machine Learning, Python, and Full Stack Development.">
+    <title>Ayan Hussain | AI/ML Engineer & Data Scientist</title>
+    <meta name="description" content="Portfolio of Ayan Hussain, a Data Science & Applications undergraduate at IIT Madras building production-grade RAG and agentic AI systems, multi-agent LLM pipelines, and full-stack AI products.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1082,13 +1082,13 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I am a Data Science and Applications student at the <strong>Indian Institute of Technology (IIT) Madras</strong>, passionate about uncovering insights from complex datasets. 
+                        I am a B.S. Data Science & Applications undergraduate at the <strong>Indian Institute of Technology (IIT) Madras</strong>, with hands-on experience shipping production-grade RAG and agentic AI systems.
                     </p>
                     <p>
-                        With a strong foundation in <strong>Machine Learning, Python, and SQL</strong>, I enjoy building predictive models and data-driven web applications. My academic journey is complemented by hands-on projects ranging from full-stack development using Flask and Vue.js to implementing deep learning architectures like CNNs.
+                        I work across <strong>multi-agent LLM pipelines, multimodal vision-based verification, and autonomous tool-using agents</strong>, built on Python/FastAPI backends with containerized deployment. I'm comfortable across the full AI engineering lifecycle: retrieval pipelines, model integration, async APIs, and end-to-end delivery — including real client projects alongside coursework and hackathons.
                     </p>
                     <p>
-                        Currently seeking opportunities to apply my technical skills in Data Analytics and Data Science roles to solve real-world problems.
+                        Currently seeking <strong>AI Engineer</strong> internship and full-time opportunities where I can build and ship LLM-powered products.
                     </p>
 
                     <div class="about-stats">
@@ -1097,11 +1097,11 @@
                             <p>CGPA</p>
                         </div>
                         <div class="stat-item">
-                            <h3>10+</h3>
+                            <h3>11+</h3>
                             <p>Projects</p>
                         </div>
                         <div class="stat-item">
-                            <h3>4+</h3>
+                            <h3>8+</h3>
                             <p>Certificates</p>
                         </div>
                     </div>
@@ -1146,7 +1146,7 @@
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-container">
                 <p>
-                    I am currently looking for internships and full-time opportunities in Data Science and Analytics. 
+                    I am currently looking for AI Engineer internships and full-time roles, especially in LLM/RAG and agentic AI systems. 
                     Whether you have a question or just want to say hi, I'll try my best to get back to you!
                 </p>
                 <a href="mailto:23f1000932@ds.study.iitm.ac.in" class="btn">Say Hello</a>
@@ -1175,7 +1175,7 @@
     <footer>
         <div class="container">
             <p>Designed & Built by Ayan Hussain</p>
-            <p style="font-size: 0.8rem; margin-top: 5px; opacity: 0.7;">&copy; 2025 All rights reserved.</p>
+            <p style="font-size: 0.8rem; margin-top: 5px; opacity: 0.7;">&copy; 2026 All rights reserved.</p>
         </div>
     </footer>
 
@@ -1193,23 +1193,74 @@
                 skills: ["Python", "Java", "SQL", "JavaScript", "HTML/CSS"]
             },
             {
+                category: "Tools & Productivity",
+                icon: "fa-screwdriver-wrench",
+                skills: ["Git", "Postman", "Power BI", "Jupyter", "Excel Advanced"]
+            },
+            {
+                category: "AI / LLM Engineering",
+                icon: "fa-robot",
+                skills: ["LangChain", "LangGraph", "RAG Pipelines", "Multi-Agent Orchestration", "Prompt Engineering", "Gemini API (Text & Vision)", "Azure AI Search", "Azure Speech / Translator"]
+            },
+            {
                 category: "Data Science & ML",
                 icon: "fa-brain",
-                skills: ["Pandas", "NumPy", "Scikit-Learn", "TensorFlow", "Keras", "Matplotlib", "Seaborn"]
+                skills: ["Pandas", "NumPy", "Scikit-Learn", "TensorFlow", "Keras", "Matplotlib", "Seaborn", "XGBoost", "LightGBM", "Isolation Forest", "Optuna"]
             },
             {
                 category: "Web Development",
                 icon: "fa-laptop-code",
-                skills: ["Flask", "Vue.js", "REST APIs", "Jinja2"]
+                skills: ["Flask", "Vue.js", "Vue 3", "REST APIs", "Jinja2", "FastAPI", "Async SQLAlchemy 2", "Pydantic v2", "JWT Auth", "SlowAPI Rate Limiting", "React", "TypeScript", "Tailwind CSS"]
+            },
+            {
+                category: "Databases & Caching",
+                icon: "fa-database",
+                skills: ["PostgreSQL (Supabase)", "SQLite"]
             },
             {
                 category: "DevOps & Tools",
                 icon: "fa-tools",
-                skills: ["Git", "GitHub", "Docker", "Linux", "Redis", "Celery"]
+                skills: ["Git", "GitHub", "Docker", "Docker Compose", "Linux", "Redis", "Celery", "GitHub Actions", "Hugging Face Spaces", "Vercel", "Railway.app"]
             }
         ];
 
         const projectsData = [
+            {
+                title: "EcoQuest India",
+                desc: "Full-stack gamified sustainability platform (React 19 + FastAPI + async SQLAlchemy 2) with a multimodal verification pipeline using Gemini 2.5 Flash Vision to classify eco-action photo uploads across 8 activity types, auto-approving above a 70% confidence threshold and routing low-confidence cases to human review. Includes a pHash duplicate-detection anti-abuse layer and is containerized with Docker Compose.",
+                tech: ["React 19", "TypeScript", "FastAPI", "Async SQLAlchemy 2", "Gemini 2.5 Flash Vision", "Supabase"],
+                link: "https://github.com/23f1000932"
+            },
+            {
+                title: "BharatBot",
+                desc: "Multilingual multi-agent AI assistant (Agriculture, Health, Legal) serving web and voice across 8 Indian languages with auto language detection. Selected among the Top 250 teams at Microsoft AI Unlocked Campus Edition 2026, an invite-only hackathon for IITs, IIMs, ISB, XLRI, and NID. Led a 5-person team to a production-ready Docker deployment on Hugging Face.",
+                tech: ["Python", "FastAPI", "Gemini", "Azure AI Search", "Azure Speech/Translator", "Docker"],
+                link: "https://github.com/23f1000932"
+            },
+            {
+                title: "LiveSports",
+                desc: "Full-stack sports event management platform built for real client Beyond Thoughts, shipping 33 REST endpoints with Flask-RESTX + Vue 3/TypeScript. Built a RAG chatbot on Groq's LLaMA-3.3-70B with function calling, integrated Razorpay payments with HMAC-SHA256 webhook verification, and wrote/reviewed 65 pytest cases.",
+                tech: ["Flask-RESTX", "Vue 3", "TypeScript", "Groq LLaMA-3.3-70B", "Razorpay"],
+                link: "https://github.com/23f1000932"
+            },
+            {
+                title: "Gemini WebGen Agent",
+                desc: "Autonomous LLM agent that receives task briefs via HTTP POST, generates complete single-file web apps, and auto-commits/deploys to GitHub Pages with zero manual intervention. Engineered a multi-round, tool-using pipeline with a Safe Mode that auto-rejects outputs under 30% of original file size, deployed on Hugging Face Spaces with live log streaming.",
+                tech: ["Python", "FastAPI", "Gemini 2.5 Flash", "Docker", "GitHub API"],
+                link: "https://github.com/23f1000932"
+            },
+            {
+                title: "Cinema Audience Forecasting",
+                desc: "Time-series forecasting model for daily cinema audience counts using a LightGBM/XGBoost ensemble across 80+ engineered features, tuned with Optuna and validated with TimeSeriesSplit — achieving an R² of 0.995+.",
+                tech: ["Python", "LightGBM", "XGBoost", "Optuna", "Time Series"],
+                link: "https://github.com/23f1000932"
+            },
+            {
+                title: "Optimising Furniture Sales",
+                desc: "Applied data analysis on real furniture business sales data (a family-run business in Prayagraj) to identify key revenue drivers and inventory bottlenecks.",
+                tech: ["Data Analysis", "Python", "EDA"],
+                link: "https://github.com/23f1000932/optimising-furniture-sales-potential"
+            },
             {
                 title: "Quiz Master",
                 desc: "An interactive quiz platform allowing users to take timed tests and view performance analytics. Built with Flask and SQL.",
@@ -1221,18 +1272,6 @@
                 desc: "Full-stack application to manage parking slot booking and user ticketing in real-time.",
                 tech: ["Flask", "Vue.js", "Redis", "Celery"],
                 link: "https://github.com/23f1000932/vehicle-parking-system"
-            },
-            {
-                title: "LLM-Powered Task Processor",
-                desc: "FastAPI app that receives tasks, generates code using Gemini API, and automatically deploys results to GitHub Pages.",
-                tech: ["FastAPI", "Gemini API", "Python"],
-                link: "https://github.com/23f1000932" 
-            },
-            {
-                title: "Cinema Audience Forecasting",
-                desc: "Built a predictive model to forecast daily cinema audience counts using historical attendance data.",
-                tech: ["Python", "Machine Learning", "Time Series"],
-                link: "https://github.com/23f1000932" 
             },
             {
                 title: "Flight Price Prediction",
@@ -1247,12 +1286,6 @@
                 link: "https://www.kaggle.com/code/ayanhussain00/kaggle-assingnment-2"
             },
             {
-                title: "Optimising Furniture Sales",
-                desc: "Analyzed furniture sales datasets to identify key revenue drivers and inventory bottlenecks.",
-                tech: ["Data Analysis", "Python", "EDA"],
-                link: "https://github.com/23f1000932/optimising-furniture-sales-potential"
-            },
-            {
                 title: "Image Classification (CNN)",
                 desc: "Designed and trained a Convolutional Neural Network from scratch to classify a large dataset of images.",
                 tech: ["TensorFlow", "Keras", "Deep Learning"],
@@ -1262,9 +1295,29 @@
 
         const certsData = [
             {
-                title: "5-Day AI Agents Intensive Course",
+                title: "Programming with GenAI",
+                issuer: "NPTEL, IISc Bangalore",
+                desc: "Coursework on leveraging LLMs and GenAI tooling for software development."
+            },
+            {
+                title: "5-Day AI Agents Intensive",
                 issuer: "Google & Kaggle",
                 desc: "Learned to build and deploy AI agents using Google's generative AI tools."
+            },
+            {
+                title: "SQL Advanced",
+                issuer: "HackerRank",
+                desc: "Advanced certification covering complex queries, joins, and optimization."
+            },
+            {
+                title: "Power BI Dashboards",
+                issuer: "IIT Madras",
+                desc: "Building interactive dashboards and data visualizations with Power BI."
+            },
+            {
+                title: "ML using Python",
+                issuer: "Simplilearn",
+                desc: "Foundational and applied machine learning techniques implemented in Python."
             },
             {
                 title: "Applied Vibe Coding",
@@ -1280,11 +1333,6 @@
                 title: "Implementing ML Techniques",
                 issuer: "Numpy",
                 desc: "Deep dive into implementing algorithms from scratch using only Numpy."
-            },
-            {
-                title: "Programming with Generative AI",
-                issuer: "NPTEL",
-                desc: "Coursework on leveraging LLMs and GenAI for software development."
             }
         ];
 
@@ -1342,7 +1390,7 @@
 
         // --- TYPEWRITER EFFECT ---
         const typeSpan = document.getElementById('typewriter');
-        const roles = ["Data Analyst", "Data Scientist", "Python Developer"];
+        const roles = ["AI/ML Engineer", "LLM & RAG Systems Builder", "Backend Developer"];
         let roleIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
