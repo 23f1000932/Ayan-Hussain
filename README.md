@@ -1,42 +1,147 @@
-# Ayan Hussain
+<div align="center">
 
-B.S. Data Science & Applications student at IIT Madras (2023–2027, CGPA 7.9/10), building toward a career in AI/ML engineering — specifically LLM-based systems, agentic architectures, and the MLOps infrastructure that gets them into production.
+# 👋 Ayan Hussain
 
-**Contact:** ayanhussain4212@gmail.com · +91 70810 12288
-**Links:** [GitHub](https://github.com/23f1000932) · [LinkedIn](https://linkedin.com/in/ayan-hussain-58752626b) · [Portfolio](https://23f1000932.github.io/Ayan-Hussain/)
+### AI/ML Engineer in the making — Agentic Systems × MLOps
 
-## What I'm interested in
+[![Email](https://img.shields.io/badge/Email-ayanhussain4212%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:ayanhussain4212@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-23f1000932-181717?style=flat&logo=github)](https://github.com/23f1000932)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/ayan-hussain-58752626b)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-6c47ff?style=flat&logo=vercel&logoColor=white)](https://23f1000932.github.io/Ayan-Hussain/)
 
-My work sits at the intersection of two things: agentic AI/RAG systems (multi-agent orchestration, tool calling, semantic retrieval, multilingual interfaces) and the MLOps discipline that makes ML systems reliable in production (data versioning, feature stores, experiment tracking, CI/CD). I like owning projects end-to-end — data engineering through model development through backend delivery through containerized deployment — rather than just one layer of the stack. I'm currently looking for AI/ML engineering roles and internships.
+![Status](https://img.shields.io/badge/status-open_to_AI%2FML_roles-brightgreen)
+![Focus](https://img.shields.io/badge/focus-Agentic_AI_%7C_RAG_%7C_MLOps-blue)
+![Education](https://img.shields.io/badge/IIT_Madras-B.S._Data_Science-orange)
 
-## What I've built
+</div>
 
-**BharatBot** is my flagship project — a multilingual multi-agent RAG assistant covering agriculture, health, and legal domains across 7 Indian languages, built on Gemini with Azure AI Search for retrieval and Azure Speech/Translator for voice. I led a five-person team on it, and it placed among the top 250 teams (out of a much larger pool) at Microsoft AI Unlocked Campus Edition 2026, an invite-only hackathon for IITs, IIMs, ISB, XLRI, and NID.
+---
 
-**EcoQuest India** is a full-stack gamified sustainability platform (React 19 + TypeScript, FastAPI + async SQLAlchemy 2, Supabase). The core piece is a multimodal LLM verification pipeline using Gemini 2.5 Flash Vision to classify eco-action photo uploads across 8 activity types, auto-approving above a 70% confidence threshold and routing the rest to human review — with a pHash duplicate-detection and rate-limiting layer to prevent abuse.
+## 🧭 About
 
-**MLOps Pipeline for Stock Movement Prediction** is my deepest infrastructure project, built for a proctored MLOps exam and expanded into weekly coursework: DVC for data versioning against a GCS remote, a Feast feature store with point-in-time correctness validated on rolling features, an 8-run MLflow hyperparameter sweep with model registry, and a GitHub Actions + CML pipeline for automated evaluation and reporting — all running on GCP/Vertex AI.
+B.S. Data Science & Applications student at IIT Madras (2023–2027, CGPA 7.9/10), building toward AI/ML engineering — specifically **agentic AI/RAG systems** and the **MLOps infrastructure** that gets them into production. I like owning projects end-to-end: data engineering → model development → backend delivery → containerized deployment, not just one layer of the stack.
 
-**LiveSports** was a client project (Beyond Thoughts) where I worked as backend developer and code reviewer on a Flask-RESTX + Vue 3/TypeScript sports event platform — 33 REST endpoints, a RAG chatbot on Groq's LLaMA-3.3-70B with function calling, Razorpay payment integration with HMAC-SHA256 webhook verification, and 65 pytest cases across the API surface.
+> 🎯 **Currently:** looking for AI/ML engineering roles and internships.
 
-**Gemini WebGen Agent** is an autonomous agent that takes a task brief over HTTP and generates, commits, and deploys a complete single-file web app to GitHub Pages with no manual intervention — including a "Safe Mode" that rejects any agent-generated update under 30% of the original file size to guard against destructive edits.
+---
 
-**Aadhaar System Optimisation Analysis** applied clustering and predictive modeling to 110M+ transactions, surfacing ~Rs 370 Cr in annual inefficiencies and a 77x rural-urban service gap, with findings shipped as a Next.js dashboard for stakeholder use.
+## 🛠️ Tech Stack
 
-Beyond these, I've built **Cinema Audience Forecasting** (an XGBoost/LightGBM ensemble with Optuna tuning), **KisanRoute** for the Google Solution Challenge (agricultural pricing data + Gemini recommendations), and **CarbonSense**, which placed roughly #1272 out of 34,000+ participants in the Google Prompt Wars competition.
+**AI / LLM Engineering**
 
-## How I work
+![LangChain](https://img.shields.io/badge/-LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat)
+![Gemini](https://img.shields.io/badge/-Gemini_API-8E75B2?style=flat&logo=googlegemini&logoColor=white)
+![Groq](https://img.shields.io/badge/-Groq_LLaMA--3.3-F55036?style=flat)
+![Azure AI Search](https://img.shields.io/badge/-Azure_AI_Search-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 
-I lean on prompt-driven coding tools like Cursor and Claude Code for scaffolding, and I'm comfortable picking up new tooling fast — DVC, Feast, MLflow, LangGraph, and the Gemini API all went from unfamiliar to production-used within tight timelines. I'm an active part of the IIT Madras student and hackathon community, and I usually work in small, cross-functional teams where I end up owning architecture decisions alongside implementation.
+**MLOps**
 
-## Technical skills
+![DVC](https://img.shields.io/badge/-DVC-945DD6?style=flat&logo=dvc&logoColor=white)
+![MLflow](https://img.shields.io/badge/-MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
+![Feast](https://img.shields.io/badge/-Feast-00A3E0?style=flat)
+![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![GCP](https://img.shields.io/badge/-GCP%2FVertex_AI-4285F4?style=flat&logo=googlecloud&logoColor=white)
 
-- **Languages:** Python, SQL, Java
-- **AI/LLM Engineering:** LangChain, LangGraph, RAG pipelines, multi-agent orchestration, tool calling, prompt engineering, Gemini API (text & vision), Groq LLaMA-3.3-70B, Azure AI Search
-- **MLOps:** DVC, Feast, MLflow, CML, GitHub Actions CI/CD, GCP/Vertex AI
-- **ML/Data:** Scikit-Learn, XGBoost, LightGBM, Optuna, Pandas, NumPy, Matplotlib, Seaborn
-- **Backend & Infra:** FastAPI, Flask, Async SQLAlchemy 2, Pydantic v2, JWT Auth, PostgreSQL/Supabase, Redis, Celery, Docker, Docker Compose
+**Backend & Data**
 
-## Where I'm headed
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=flat&logo=flask&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL%2FSupabase-336791?style=flat&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat&logo=redis&logoColor=white)
 
-I'm actively applying to AI/ML engineering and internship roles, tailoring resumes toward MLOps and agentic-AI positions specifically (recent targets have included Gen AI internship and AI engineer roles). The gap I'm most conscious of closing next is production vector-DB and on-prem model-serving experience, since most of my retrieval work so far has run through managed services like Azure AI Search.
+**ML / Data Science**
+
+![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/-XGBoost-005A9C?style=flat)
+![LightGBM](https://img.shields.io/badge/-LightGBM-02569B?style=flat)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white)
+
+---
+
+## 🚀 Project Highlights
+
+### 🇮🇳 BharatBot — Flagship Project
+**Multilingual multi-agent RAG assistant** · Gemini + Azure AI Search + Azure Speech/Translator
+
+Led a 5-person team building an agentic system across agriculture, health, and legal domains, serving web + voice interfaces in **7 Indian languages**.
+
+🏆 **Top 250 teams** — Microsoft AI Unlocked Campus Edition 2026 (invite-only, IITs/IIMs/ISB/XLRI/NID)
+
+---
+
+### 🌱 EcoQuest India — AI-Verified Sustainability Platform
+**React 19 + FastAPI + Gemini 2.5 Flash Vision**
+
+Multimodal verification pipeline classifying eco-action photo uploads across 8 activity types — auto-approves above 70% confidence, routes the rest to human review. Anti-abuse layer combines perceptual-hash duplicate detection with rate limiting.
+
+---
+
+### 📈 MLOps Pipeline for Stock Movement Prediction
+**DVC + Feast + MLflow + CI/CML on GCP**
+
+End-to-end productionized pipeline: DVC-versioned OHLCV data on a GCS remote, a Feast feature store with validated point-in-time correctness, an 8-run MLflow hyperparameter sweep with model registry, and a GitHub Actions + CML pipeline for automated evaluation.
+
+```
+Data Versioning (DVC) → Feature Store (Feast) → Experiment Tracking (MLflow) → CI/CD (GitHub Actions + CML)
+```
+
+---
+
+### 🏆 LiveSports — Sports Event Management Platform
+**Flask-RESTX + Vue 3/TypeScript** · Client: Beyond Thoughts
+
+Backend developer + code reviewer — 33 REST endpoints, a Groq LLaMA-3.3-70B RAG chatbot with function calling, Razorpay payments with HMAC-SHA256 webhook verification, 65 pytest cases.
+
+---
+
+### 🤖 Gemini WebGen Agent — Autonomous Web App Generator
+**FastAPI + Gemini 2.5 Flash + GitHub API**
+
+Takes a task brief over HTTP, generates a complete single-file web app, and auto-commits/deploys to GitHub Pages with zero manual intervention. Includes a **Safe Mode** that rejects any agent-generated update under 30% of the original file size.
+
+---
+
+### 🇮🇳 Aadhaar System Optimisation Analysis
+**Scikit-Learn + Next.js**
+
+Analyzed 110M+ transactions → surfaced ~**Rs 370 Cr** in annual inefficiencies and a **77x** rural-urban service gap. Findings shipped as an interactive Next.js dashboard.
+
+---
+
+<details>
+<summary>🎮 More builds (click to expand)</summary>
+
+- **Cinema Audience Forecasting** — XGBoost/LightGBM ensemble, Optuna-tuned, 18% RMSE reduction over baseline
+- **KisanRoute** — Google Solution Challenge entry combining data.gov.in agricultural pricing with Gemini recommendations
+- **CarbonSense** — ranked **#1272 of 34,000+** in Google Prompt Wars
+- **Vehicle Parking System** — Flask + Vue + Redis + Celery
+- **Customer Churn Prediction**, **Quiz Master**
+
+</details>
+
+---
+
+## 📊 Snapshot
+
+| | |
+|---|---|
+| 🎓 Education | B.S. Data Science & Applications, IIT Madras (2023–2027) — CGPA 7.9/10 |
+| 🏆 Hackathons | Top 250 @ Microsoft AI Unlocked · #1272/34K @ Google Prompt Wars |
+| 🧩 Core stack | LangChain/LangGraph, Gemini API, DVC/Feast/MLflow, FastAPI, Docker |
+| 🎯 Next milestone | Production vector-DB & on-prem model-serving experience |
+| 📬 Status | Open to AI/ML engineering roles & internships |
+
+---
+
+## ⚡ How I Work
+
+I lean on prompt-driven coding tools like Cursor and Claude Code for scaffolding, and pick up new tooling fast — DVC, Feast, MLflow, LangGraph, and the Gemini API all went from unfamiliar to production-used within tight timelines. Most of my work happens in small, cross-functional teams where I end up owning architecture decisions alongside implementation.
+
+<div align="center">
+
+*Building agentic AI systems, one production pipeline at a time.* 🚀
+
+</div>
