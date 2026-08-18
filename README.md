@@ -136,10 +136,6 @@ Analyzed 110M+ transactions → surfaced ~**Rs 370 Cr** in annual inefficiencies
 
 ---
 
-## ⚡ How I Work
-
-I lean on prompt-driven coding tools like Cursor and Claude Code for scaffolding, and pick up new tooling fast — DVC, Feast, MLflow, LangGraph, and the Gemini API all went from unfamiliar to production-used within tight timelines. Most of my work happens in small, cross-functional teams where I end up owning architecture decisions alongside implementation.
-
 <div align="center">
 
 *Building agentic AI systems, one production pipeline at a time.* 🚀
