@@ -2,7 +2,7 @@
 
 # 👋 Ayan Hussain
 
-### AI/ML Engineer in the making — Agentic Systems × MLOps
+### AI/ML Engineer in the making
 
 [![Email](https://img.shields.io/badge/Email-ayanhussain4212%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:ayanhussain4212@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-23f1000932-181717?style=flat&logo=github)](https://github.com/23f1000932)
